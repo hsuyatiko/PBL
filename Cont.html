@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Continent</title>
+		<style type="text/css">
+		body{background: #f0f0f5;}
+		h1{
+			font-size: 60px;
+			font-weight: bold;
+			text-align: center;
+			letter-spacing: 12px;
+			color: #333333;
+			margin: auto;
+			text-shadow: 0 0 .5em #ff6680;
+		}
+		h3{
+			font-size: 27px;
+			color: #262626;
+			text-align: center;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background: #ffb3b3;
+			top: 0;
+			font-size: 20px;
+			font-family: Georgia;
+		}
+		li{float: left;}
+		li a{
+			color: black;
+			text-decoration: none;
+			padding: 15px 17px;
+			display: inline-block;
+		}
+		li a.active{
+			color: rebeccapurple;
+			background: #ffe6e6;}
+
+		li a:hover:not(.active){
+			color: rebeccapurple;
+		}
+		li a:hover, li:hover .ct{
+			color: lightcoral;	
+		}
+		.da{
+			width: 160px;
+			display: none;
+			background: floralwhite;
+			z-index: 1;
+		}
+		.da a{
+			font-size: 18px;
+			color: deeppink;
+			display: block;
+			text-decoration: none;
+			padding: 12px;
+		}
+		li:hover div{
+			display: block;
+			position: absolute;
+		}
+		img {
+			width: 420px;
+			height: 400px;
+			border: 3px dashed #ff9999;
+			border-radius: 10px;
+		}
+		img:hover{
+			opacity: 0.7;
+		}
+		.con{
+			text-align: center;
+		}
+		.first{
+			position: relative;
+			padding: 30px;
+			width: 420px;
+			height: 400px;
+			display: inline-block;
+		}
+		.lp {
+	    	margin: auto;
+	    	width: 1220px;
+			height:45px;
+	    	position: relative;
+	    	background: #ffccd4;
+	    	border: 2px double black;
+	    	border-radius: 30px;
+	    	padding-bottom: 20px;
+	    	font-size: 22px;
+	    	font-family: Georgia;
+	    	text-align: center;
+	    }
+		.b{
+	    	border: 2px dotted black;
+	    }
+	</style>
+</head>
+<body>
+<h1>~ Simple Four ~</h1>
+<h3><b>-</b> All About National Flowers <b>-</b></h3>
+<ul>
+	<li><a href="Home.html">Home</a></li>
+	<li><a href="Cont.html" class="active">Continents</a></li>
+	<li><a href="country.html" class="ct">Countries</a>
+	<div class="da">
+		<a href="country.html#ASIA">Asia</a>
+		<a href="country.html#EUROPE">Europe</a>
+		<a href="country.html#SAM">South America</a>
+		<a href="country.html#NAM">North America</a>
+		<a href="country.html#AFRICA">Africa</a>
+	</div>
+    </li>
+	<li><a href="blog.html">Blog</a></li>
+	<li><a href="contact.html">Contact</a></li>
+	<li><a href="about.html">About</a></li>
+</ul>
+<br><br><br><br>
+
+<div class="con">
+<div class="first">
+	<a href="country.html#ASIA"><img src="Asia.jfif"></a>
+</div>
+<div class="first">
+	<a href="country.html#EUROPE"><img src="europe.jfif"></a>
+</div>
+<div class="first">
+	<a href="country.html#SAM"><img src="sam.jfif"></a>
+</div>
+</div>
+<br><br>
+<div class="con">
+<div class="first">
+	<a href="country.html#NAM"><img src="nam.jfif"></a>
+</div>
+<div class="first">
+	<a href="country.html#AFRICA"><img src="africa.jfif"></a>
+</div>
+</div>
+<br><br><br>
+<div class="lp">
+<p>~ The used pictures are inspired and referenced from other websites, we give 
+fully credit to the rightful owner respectfully~</p></div>
+<br><br>
+<hr class="b">
+</body>
+</html>
