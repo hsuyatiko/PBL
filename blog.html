@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blog</title>
+		<style type="text/css">
+		body{background: #f0f0f5;}
+		h1{
+			font-size: 60px;
+			font-weight: bold;
+			text-align: center;
+			letter-spacing: 12px;
+			color: #333333;
+			margin: auto;
+			text-shadow: 0 0 .5em #ff6680;
+		}
+		h3{
+			font-size: 27px;
+			color: #262626;
+			text-align: center;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background: #ffb3b3;
+			top: 0;
+			font-size: 20px;
+			font-family: Georgia;
+		}
+		li{float: left;}
+		li a{
+			color: black;
+			text-decoration: none;
+			padding: 15px 17px;
+			display: inline-block;
+		}
+		li a.active{
+			color: rebeccapurple;
+			background: #ffe6e6;}
+
+		li a:hover:not(.active){
+			color: rebeccapurple;
+		}
+		li a:hover, li:hover .ct{
+			color: lightcoral;	
+		}
+		.da{
+			width: 160px;
+			display: none;
+			background: floralwhite;
+			z-index: 1;
+		}
+		.da a{
+			font-size: 18px;
+			color: deeppink;
+			display: block;
+			text-decoration: none;
+			padding: 12px;
+		}
+		li:hover div{
+			display: block;
+			position: absolute;
+		}
+		.ab{
+			border-radius: 45px;
+			margin: auto;
+			border: 2px dotted #ff6680;
+			width: 945px;
+			background: #ffccdd;
+		}
+		.fpg{
+			margin: auto;
+			width: 825px;
+	    	height: 190px;
+	    	padding-left: 30px;
+	    	padding-right: 30px;
+	    	padding-top: 5px;
+	    	font-size: 26px;
+	    	text-align: justify;
+	    	text-indent: 45px;
+	    	line-height: 30px;
+		}
+		.spg{
+			margin: auto;
+			width: 825px;
+	    	height: 185px;
+	    	padding-left: 30px;
+	    	padding-right: 30px;
+	    	padding-bottom: 25px;
+	    	padding-top: 20px;
+	    	font-size: 26px;
+	    	text-align: justify;
+	    	text-indent: 45px;
+	    	line-height: 30px;
+		}
+		.al{
+			margin: auto;
+			width: 1125px;
+			height: 225px;
+		}
+		.tt{
+			margin: auto;
+			text-align: center;
+			padding-top: 9px;
+			padding-left: 8px;
+			width: 220px;
+			height: 36px;
+			letter-spacing: 10px;
+			font-family: Georgia;
+			font-size: 27px;
+			border-radius: 30px;
+			color:  #333333;
+		}
+		.tt2{
+			margin: auto;
+			text-align: center;
+			padding-top: 9px;
+			padding-left: 8px;
+			width: 424px;
+			height: 36px;
+			letter-spacing: 8px;
+			font-family: Georgia;
+			font-size: 27px;
+			border-radius: 30px;
+			color:  #333333;
+		}
+		img {
+			width: 200px;
+			height: 180px;
+			border: 3px dashed #ff9999;
+			border-radius: 15px;
+		}
+		.fl{
+			float: left;
+			position: relative;
+			padding: 20px;
+			width: 200px;
+			height: 180px;
+			display: inline-block;
+			
+		}
+		.fw{
+			float: left;
+			position: relative;
+			padding: 20px;
+			width: 200px;
+			height: 180px;
+			display: inline-block;
+		}
+		.inf{
+			padding-top: 20px;
+			position: relative;
+			padding-left: 10px;
+			padding-right: 10px;
+			width: 595px;
+			height: 185px;
+			display: inline-block;
+			font-size: 20px;
+			text-align: justify;
+			font-family: Georgia;
+		}
+		.tlt{
+			margin: auto;
+			padding-top: 7px;
+			padding-left: 8px;
+			letter-spacing: 8px;
+			border: 2px dashed #ff9999;
+			border-radius: 30px;
+			width: 150px;
+			height: 37px;
+			font-size: 25px;
+			text-align: center;
+		}
+		.tltl{
+			margin: auto;
+			padding-top: 7px;
+			padding-left: 8px;
+			letter-spacing: 8px;
+			border: 2px dashed #ff9999;
+			border-radius: 30px;
+			width: 250px;
+			height: 37px;
+			font-size: 25px;
+			text-align: center;
+			}
+		.tltl2{
+			margin: auto;
+			padding-top: 7px;
+			padding-left: 8px;
+			letter-spacing: 8px;
+			border: 2px dashed #ff9999;
+			border-radius: 30px;
+			width: 200px;
+			height: 37px;
+			font-size: 25px;
+			text-align: center;
+			}
+		.lp {
+	    	margin: auto;
+	    	width: 1055px;
+			height:65px;
+	    	position: relative;
+	    	background: #ffccd4;
+	    	border: 2px double black;
+	    	border-radius: 30px;
+	    	padding-bottom: 20px;
+	    	font-size: 22px;
+	    	font-family: Georgia;
+	    	text-align: center;
+	    }
+		.b{
+			margin: auto;
+			border: 2px dotted #ff9999;
+	    	width: 1055px;
+	    	padding-right: 14px;
+	    }
+	</style>
+</head>
+<body>
+<h1>~ Simple Four ~</h1>
+<h3><b>-</b> All About National Flowers <b>-</b></h3>
+<ul>
+	<li><a href="Home.html">Home</a></li>
+	<li><a href="Cont.html">Continents</a></li>
+	<li><a href="country.html"  class="ct">Countries</a>
+	<div class="da">
+		<a href="country.html#ASIA">Asia</a>
+		<a href="country.html#EUROPE">Europe</a>
+		<a href="country.html#SAM">South America</a>
+		<a href="country.html#NAM">North America</a>
+		<a href="country.html#AFRICA">Africa</a>
+	</div>
+    </li>
+	<li><a href="blog.html" class="active">Blog</a></li>
+	<li><a href="contact.html">Contact</a></li>
+	<li><a href="about.html">About</a></li>
+</ul>
+<br><br><br>
+
+
+<div class="ab">
+<div class="fpg">
+<p>Each country in the world has numerous national symbols, which are extremely important for its national identity. These symbols include various things such as the nation’s flag, the national anthem or more tangible things like a national bird, plant or flower. These become unique entities that represent a particular country.<br>________________________________________________________________</p>
+</div>
+
+<div class="spg">
+<p>A large number of countries across the globe have defined floral emblems. Some of them are decided by the governments of these countries, while others are decided by means of public polls. Given below is the national flowers from some countries of the world.<br>________________________________________________________________</p>
+</div>
+</div>
+<br><br>
+<div class="tt" id="asia"><b>~ASIA~</b></div><br><br>
+<p class="tlt" id="china">China</p>
+<div class="al">
+<div class="fl"><img src="chinaf.jpg"></div>
+<div class="fw"><img src="plum.jpg"></div>
+<div class="inf">
+	<p>The Plum Blossom</p>
+	<p>The plum blossom, which has shades of pink and white and gives off a delicate fragrance, has great symbolic value for the Chinese people because of its resilience during the harsh winter.<br><a href="https://english.president.gov.tw/Page/98">>>>></a></p>
+</div>
+</div>
+<br><br>
+<p class="tlt" id="japan">Japan</p>
+<div class="al">
+<div class="fl"><img src="japf.jpg"></div>
+<div class="fw"><img src="cherry.jpg"></div>
+<div class="inf">
+	<p>Cherry Blossoms (SAKURA)</p>
+	<p>Cherry blossoms (SAKURA) are Japan's unofficial national flower, formerly called tree flower (KONOHA). In Japan's early history it ranked second after plum blossoms (UME). In Japanese, the single character for flower is used to represent cherry blossoms.<br><a href="https://www.mint.go.jp/eng/kids-eng/eng_kids_kids_sakura.html">>>>></a>
+</p>
+</div>
+</div>
+<br><br>
+<p class="tltl" id="sk">South Korea</p>
+<div class="al">
+<div class="fl"><img src="skof.jpg"></div>
+<div class="fw"><img src="muhwa.jpg"></div>
+<div class="inf">
+	<p>Mugunghwa</p>
+	<p>The mugunghwa, or the rose of Sharon, is an object of deep affection. Meaning “eternal blossom that never fades,” it has been an important symbol of Korean culture for centuries. The mugungwha was treasured as a “blossom from heaven”.
+<br><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjf39e_mMH8AhWOw3MBHauhCOgQFnoECCQQAQ&url=https%3A%2F%2Fwww.mois.go.kr%2Feng%2Fsub%2Fa03%2FnationalSymbol_3%2Fscreen.do&usg=AOvVaw0NX4zt6LD8c8YUBPjhDfAb">>>>></a>
+</p>
+</div>
+</div>
+<br><br>
+<p class="tltl2" id="mym">Myanmar</p>
+<div class="al">
+<div class="fl"><img src="mymf.jpg"></div>
+<div class="fw"><img src="Padauk.jpg"></div>
+<div class="inf">
+	<p>Padauk</p>
+	<p>The golden fragrant flowers of Padauk are also considered as the national flower of Myanmar. While the tree symbolizes strength, the flower represents youth, love and romance with its fragrant scent.<br><a href="https://myanmar.gov.mm/national-symbols">>>>></a></p>
+
+</div>
+</div>
+<br><br>
+<p class="tltl" id="phlp">Philippines</p>
+<div class="al">
+<div class="fl"><img src="phipf.jpg"></div>
+<div class="fw"><img src="jas.jpg"></div>
+<div class="inf">
+	<p>Sampaguita</p>
+	<p>Jasminum sambac commonly known as Sampaguita was declared as the national flower by Governor-General Frank Murphy in 1934. Its white flower is believed to symbolize purity, fidelity, and hope.<br><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj-qKSDivj7AhXDALcAHcawA4MQFnoECB4QAw&url=https%3A%2F%2Fwww.nationalmuseum.gov.ph%2F2021%2F11%2F10%2Fphilippine-national-flower-sampaguita%2F&usg=AOvVaw2XYnPr0bm6751xvOzANaSx
+">>>>></a></p>
+</div>
+</div>
+<br>
+<hr class="b">
+<br><br>
+<div class="tt" id="europe"><b>~EUROPE~</b></div>
+<br><br>
+<p class="tlt" id="irel">Ireland</p>
+<div class="al">
+<div class="fl"><img src="iref.jpg"></div>
+<div class="fw"><img src="shamrock.jpg"></div>
+<div class="inf">
+	<p>Shamrock</p>
+	<p>The word shamrock derives from the Irish seamróg, which is a diminutive of seamair óg meaning "young clover". Ireland's association with the shamrock grew from the 18th century onwards, in a similar way to other associations like a rose for England, a thistle for Scotland and a daffodil for Wales.<br><a href="https://www.europeana.eu/en/blog/why-the-shamrock-is-a-symbol-of-ireland#:~:text=The%20word%20shamrock%20derives%20from,and%20a%20daffodil%20for%20Wales">>>>></a>
+</p>
+</div>
+</div>
+<br><br>
+<p class="tltl" id="nethl">Netherland</p>
+<div class="al">
+<div class="fl"><img src="nethf.jpg"></div>
+<div class="fw"><img src="tulip.jpg"></div>
+<div class="inf">
+	<p>Tulip</p>
+	<p>Tulip also known as Tulipa is the national flower of Netherlands. Tulips are divided into 15 distinct groups, they are the symbol for love, passion, perfect lovers and romance.  <br><a href="https://readnational.com/national-flower-of-netherlands/">>>>></a></p>
+
+</div>
+</div>
+<br><br>
+<p class="tltl2" id="ger">Germany</p>
+<div class="al">
+<div class="fl"><img src="gerf.jpg"></div>
+<div class="fw"><img src="cornfl.jpg"></div>
+<div class="inf">
+	<p>Cornflower</p>
+	<p>The blue cornflower was one of the national symbols of Germany. It is considered as useful wild flower.It can be use for food especially for cooking decoration. As a herbal medicine its fluid is very effective in conjunctivitis(eyes related) also provide freshness to tired eyes.<br><a href="https://readnational.com/corn-flower-national-flower-of-germany/">>>>></a>
+</p>
+</div>
+</div>
+<br><br>
+<p class="tltl2" id="ukr">Ukraine</p>
+<div class="al">
+<div class="fl"><img src="ukraf.jpg"></div>
+<div class="fw"><img src="sunfl.jpg"></div>
+<div class="inf">
+	<p>Sunflower</p>
+	<p>The sunflower is Ukraine's national flower. Sunflowers symbolise loyalty, adoration. They are well-known for being a happy flower and the perfect bloom for a summer flower delivery to brighten someone's mood! But, they actually have different meanings across cultures.<br><a href="https://www.bloomandwild.com/meaning-and-symbolism-of-sunflowers">>>>></a></p>
+
+</div>
+</div>
+<br><br>
+<p class="tlt" id="ital">Italy</p>
+<div class="al">
+<div class="fl"><img src="italf.jpg"></div>
+<div class="fw"><img src="whitell.jpg"></div>
+<div class="inf">
+	<p>White Lily</p>
+	<p>The white lily is a national symbol of Italy. They are often chosen for both weddings and funerals, white lilies symbolise a rejuvenation of the soul. They can represent purity, commitment and rebirth.<br><a href="https://www.bloomandwild.com/lily-flower-meaning">>>>></a>
+</p>
+</div>
+</div>
+<br>
+<hr class="b">
+<br><br>
+<div class="tt2" id="samr"><b>~SOUTH AMERICA~</b></div>
+<br><br>
+<p class="tlt" id="chile">Chile</p>
+<div class="al">
+<div class="fl"><img src="chif.jpg"></div>
+<div class="fw"><img src="le.jpg"></div>
+<div class="inf">
+	<p>Lapageria</p>
+	<p>Lapageria is native to South America, and in Chile, it is the national flower. The species climbs naturally through the branches of shrubs and trees in moist forest habitats and is pollinated by hummingbirds.<br><a href="https://www.birminghambotanicalgardens.org.uk/lapageria-rosea-chilean-bell-flower/#:~:text=Lapageria%20is%20native%20to%20South,over%2Dcollection%20and%20forest%20clearance">>>>></a></p>
+
+</div>
+</div>
+<br><br>
+<p class="tltl2" id="arg">Argentina</p>
+<div class="al">
+<div class="fl"><img src="argenf.jpg"></div>
+<div class="fw"><img src="cei.jpg"></div>
+<div class="inf">
+	<p>Ceibo</p>
+	<p>Ceibo is commonly known in Spanish is the Argentina national flower. Its dramatic red coloring and profuse blooms make it one of the most striking varieties of flowering coral trees.<br><a href="https://blogpatagonia.australis.com/argentina-national-flower/">>>>></a>
+</p>
+</div>
+</div>
+<br><br>
+<p class="tlt" id="peru">Peru</p>
+<div class="al">
+<div class="fl"><img src="peruf.jpg"></div>
+<div class="fw"><img src="can.jpg"></div>
+<div class="inf">
+	<p>Cantua Buxifolia</p>
+	<p>Cantuta is the national flower of Peru, magical shrubby evergreen tree. Beautiful flowering shrub in the highlands of the Andes. The color of the cantata symbolizes national unity and bears the colors of two royal sons of Inca kings, red and yellow, as well as evergreen, meaning hope.<br><a href="https://www.magdalenakalieva.com/product/cantuta-the-national-flower-of-peru/">>>>></a>
+</p>
+</div>
+</div>
+<br><br>
+<p class="tltl2" id="colom">Colombia</p>
+<div class="al">
+<div class="fl"><img src="clmbf.jpg"></div>
+<div class="fw"><img src="orc.jpg"></div>
+<div class="inf">
+	<p>Cattleya orchid</p>
+	<p>Cattleya orchid is a Colombia's national flower. The cattleya trianae orchid, commonly known as “May flower” or “May lily” has been the national flower of Colombia since 1936. This orchid represents the beauty of the Colombian flora.<br><a href="https://www.thegardenstyle.com/flowers/national-flower-of-colombia-history-and-significance/">>>>></a>
+</p>
+</div>
+</div>
+<br><br>
+<p class="tlt" id="spain">Spain</p>
+<div class="al">
+<div class="fl"><img src="spaf.jpg"></div>
+<div class="fw"><img src="carna.jpg"></div>
+<div class="inf">
+	<p>Red Carnation</p>
+	<p>The national flower of Spain is the red carnation. The red carnation is first of all a bright red vibrant and attractive flower. Carnations have the sweet fragrance of a light clove-like or nutmeg scent, and they can be made into jams or even used to flavor buttercream frosting or in decoration for cakes. <br><a href="https://explorermomma.com/national-flower-of-spain-red-carnation/">>>>></a>
+</p>
+</div>
+</div>
+<br>
+<hr class="b">
+<br><br>
+<div class="tt2" id="namr"><b>~NORTH AMERICA~</b></div>
+<br><br>
+<p class="tlt" id="usa">USA</p>
+<div class="al">
+<div class="fl"><img src="usaf.jpg"></div>
+<div class="fw"><img src="rosa.jpg"></div>
+<div class="inf">
+	<p>Rose</p>
+	<p>On November 20, 1986, President Ronald Reagan declared the rose the National Flower of the USA in a special ceremony in the White House Rose Garden. The proclamation reads, in part: More often than any other flower, we hold the rose dear as the symbol of life and love and devotion, of beauty and eternity.
+<br><a href="https://www.birdsandblooms.com/gardening/gardening-basics/national-flower-bird-tree-united-states/">>>>></a></p>
+
+</div>
+</div>
+<br><br>
+<p class="tlt" id="bra">Brazil</p>
+<div class="al">
+<div class="fl"><img src="brzf.jpg"></div>
+<div class="fw"><img src="braorc.jpg"></div>
+<div class="inf">
+	<p>Cattleya Orchid</p>
+	<p>The National Flower of  brazil  is Cattleya Orchid also known as Corsage Orchid. Cattleya Orchid flower consist of one hundred and thirteen species of orchid. Due to its popularity, beauty and scent it is famous on the name of queen of the orchids.<br><a href="https://readnational.com/cattleya-orchid-national-flower-of-brazil/">>>>></a>
+</p>
+</div>
+</div>
+<br><br>
+<p class="tlt" id="cnd">Canada</p>
+<div class="al">
+<div class="fl"><img src="cndf.jpg"></div>
+<div class="fw"><img src="mapal.jpg"></div>
+<div class="inf">
+	<p>Maple</p>
+	<p>It's no surprise that the iconic Maple Leaf is the national flower of Canada. The Maple Tree is famous for both its distinctive leaves and its sweet syrup made from the tree sap. Maple symbolizes balance, love, longevity and abundance.<br><a href="https://bloomson9th.ca/blog/maple/#:~:text=Maple%20symbolizes%20balance%2C%20love%2C%20longevity,connected%20with%20power%20and%20money">>>>></a>
+</p>
+</div>
+</div>
+<br><br>
+<p class="tlt" id="mxi">Mexico</p>
+<div class="al">
+<div class="fl"><img src="mexif.jpg"></div>
+<div class="fw"><img src="dah.jpg"></div>
+<div class="inf">
+	<p>Dahlia</p>
+	<p>Dahlia is an important plant in the world as pot plant and cut flower, it is native to Mexico, were it is a source of food, medicine and ornamental value. In 1963 it was declared as the National Flower of Mexico.<br><a href="https://www.ishs.org/ishs-article/1288_15#:~:text=Dahlia%20is%20an%20important%20plant,the%20National%20Flower%20of%20Mexico">>>>></a>
+</p>
+</div>
+</div>
+<br><br>
+<p class="tlt" id="pnm">Panama</p>
+<div class="al">
+<div class="fl"><img src="pnmf.jpg"></div>
+<div class="fw"><img src="peris.jpg"></div>
+<div class="inf">
+	<p>Peristeria elata</p>
+	<p>Peristeria elata is the national flower of Panama. This group of sympodial, terrestrial or epiphytic orchids has large, almost-teardrop-shaped pseudobulbs.<br><a href="https://iisc.ac.in/dove-orchid-peristeria-elata/#:~:text=Peristeria%20elata%20is%20the%20national,almost%2Dteardrop%2Dshaped%20pseudobulbs">>>>></a>
+</p>
+</div>
+</div>
+<br>
+<hr class="b">
+<br><br>
+<div class="tt" id="afc"><b>~AFRICA~</b></div>
+<br><br>
+<p class="tlt" id="egyt">Egypt</p>
+<div class="al">
+<div class="fl"><img src="egpf.jpg"></div>
+<div class="fw"><img src="lotus.jpg"></div>
+<div class="inf">
+	<p>The Lotus Flower</p>
+	<p>The Egyptian lotus is the national flower of Egypt. The lotus flower has often come to be associated with purity and cleanliness with its natural habitat being ponds and rivers. In ancient times the Egyptian lotus was worshiped, especially in Egypt. It was considered a symbol of creation there. <br><a href="https://egyptianstreets.com/2019/06/19/the-lotus-egypts-national-flower/">>>>></a></p>
+
+</div>
+</div>
+<br><br>
+<p class="tltl" id="safr">South Africa</p>
+<div class="al">
+<div class="fl"><img src="saff.jpg"></div>
+<div class="fw"><img src="protea.jpg"></div>
+<div class="inf">
+	<p>Protea cynaroides</p>
+	<p>Protea cynaroides is the national flower of South Africa. It has many forms and varieties and is an adaptable plant under cultivation. It is grown worldwide for the cut flower industry, and is commonly known by the names King Protea and Cape Artichoke Flower, amongst others.
+<br><a href="https://www.gardenia.net/plant/protea-cynaroides">>>>></a>
+</p>
+</div>
+</div>
+<br><br>
+<p class="tltl2" id="tunis">Tunisia</p>
+<div class="al">
+<div class="fl"><img src="tunisf.jpg"></div>
+<div class="fw"><img src="jasn.jpg"></div>
+<div class="inf">
+	<p>Jasmine</p>
+	<p>Jasmine is the national flower of Tunisia, and the Tunisian people love it because it symbolizes “Simplicity, serenity, purity, and happiness.”! Arabian Jasmine flowers have many uses including making a “wonderful tea that many people love to drink and in some regions, it used to create leis.” <br><a href="https://carthagemagazine.com/jasmine-flower-tunisia/">>>>></a>
+</p>
+</div>
+</div>
+<br><br>
+<p class="tltl2" id="zbb">Zimbabwe</p>
+<div class="al">
+<div class="fl"><img src="zbbf.jpg"></div>
+<div class="fw"><img src="flamell.jpg"></div>
+<div class="inf">
+	<p>The Flame Lily</p>
+	<p>The Flame Lily is the national flower of Zimbabwe Also known as Flame Lily or Fire Lily, The flame lily (Gloriosa superba), or gloriosa lily, is a poisonous potted plant or houseplant that can also be used as a cut flower. It belongs to the timeless family (Colchicaceae) and is related to the lantern lily, among others.
+<br><a href="https://www.krugerpark.co.za/africa_flame_lily.html">>>>></a>
+</p>
+</div>
+</div>
+<br><br>
+<p class="tltl2" id="mrcc">Morocco</p>
+<div class="al">
+<div class="fl"><img src="mrccf.jpg"></div>
+<div class="fw"><img src="rose.jpg"></div>
+<div class="inf">
+	<p>Rose</p>
+	<p>The National flower of Morocco is the Wild Rose, botanical name is Rosa. Rose is the main flower of Morocco as there is a Rose festival every year. There is no official floral emblem but the rose was chosen due to its popularity.<br><a href="https://helonational.com/the-national-flower-of-morocco/">>>>></a>
+</p>
+</div>
+</div>
+<hr class="b">
+<br><br>
+<br>
+<div class="lp">
+<p>~The used information and pictures are inspired and referenced from other websites, we give 
+fully credit to the rightful owner respectfully~</p></div>
+<br><br>
+<hr class="b">
+</body>
+</html>
