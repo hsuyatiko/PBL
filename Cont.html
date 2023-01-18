@@ -21,6 +21,8 @@
 			text-align: center;
 		}
 		ul{
+			z-index: 1;
+			position: sticky;
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
@@ -87,12 +89,10 @@
 		.lp {
 	    	margin: auto;
 	    	width: 1320px;
-			height:45px;
 	    	position: relative;
 	    	background: #ffccd4;
 	    	border: 2px double black;
 	    	border-radius: 30px;
-	    	padding-bottom: 20px;
 	    	font-size: 22px;
 	    	font-family: Georgia;
 	    	text-align: center;
@@ -102,6 +102,41 @@
 	    }
 	    a{
 	    	text-decoration: none;
+	    }
+	        /*for mobile phones*/
+		[class*="col-"]{
+		width: 100%;
+		}
+		@media only screen and (min-width: 600px){
+			/*for tablets*/
+		.col-s-1{width: 8.33%}
+		.col-s-2{width: 16.66%}
+		.col-s-3{width: 25%}
+		.col-s-4{width: 33.33%}
+		.col-s-5{width: 41.66%}
+		.col-s-6{width: 50%}
+		.col-s-7{width: 58.33%}
+		.col-s-8{width: 66.66%}
+		.col-s-9{width: 75%}
+		.col-s-10{width: 83.33%}
+		.col-s-11{width: 91.66%}
+		.col-s-12{width: 100%}
+	    }
+
+	    @media only screen and (min-width: 768px){
+			/*for desktops*/
+		.col-1{width: 8.33%}
+		.col-2{width: 16.66%}
+		.col-3{width: 25%}
+		.col-4{width: 33.33%}
+		.col-5{width: 41.66%}
+		.col-6{width: 50%}
+		.col-7{width: 58.33%}
+		.col-8{width: 66.66%}
+		.col-9{width: 75%}
+		.col-10{width: 83.33%}
+		.col-11{width: 91.66%}
+		.col-12{width: 100%}
 	    }
 	</style>
 </head>
@@ -126,7 +161,7 @@
 </ul>
 <br><br><br><br>
 
-<div class="con">
+<div class="con col-s-12 col-12">
 <div class="first">
 	<a href="country.html#ASIA"><img src="Asia.jfif"></a>
 </div>
@@ -137,8 +172,8 @@
 	<a href="country.html#SAM"><img src="sam.jfif"></a>
 </div>
 </div>
-<br><br>
-<div class="con">
+<br>
+<div class="con col-s-12 col-12">
 <div class="first">
 	<a href="country.html#NAM"><img src="nam.jfif"></a>
 </div>
@@ -147,7 +182,7 @@
 </div>
 </div>
 <br><br><br>
-<div class="lp">
+<div class="lp col-s-6 col-10">
 <p>~The used pictures are inspired and referenced from <a href="https://www.pinterest.com/">pinterest</a> website, we give fully credit to the rightful owner respectfully~</p></div>
 <br><br>
 <hr class="b">
